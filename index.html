@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      div a:link {
+        color: #000;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #66ff00;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background: rgb(204, 10, 173);
+        background: linear-gradient(
+          90deg,
+          rgba(204, 10, 173, 1) 0%,
+          rgba(189, 255, 0, 0.9831582291119573) 100%
+        );
+      }
+      .img {
+        float: left;
+        position: fixed;
+      }
+      .container1 {
+        margin-top: 15px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+      }
+      .btn {
+        margin-top: 5px;
+      }
+      .btn1 {
+        border-radius: 5px;
+        padding: 5px;
+        background: rgb(181, 48, 228);
+        background: linear-gradient(
+          90deg,
+          rgba(181, 48, 228, 1) 0%,
+          rgba(227, 255, 0, 0.9831582291119573) 100%
+        );
+      }
+      .btn2 {
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #f9629f;
+      }
+      .btn2 a {
+        color: aliceblue;
+      }
+      .btn2:hover {
+        background-color: #8b0000;
+      }
+      .btn3 {
+        border-radius: 5px;
+        padding: 4px;
+        background-color: #fc8eba;
+        margin-top: 32px;
+      }
+      .btn3 a {
+        color: antiquewhite;
+      }
+      .btn3:hover {
+        background-color: #ff05d5;
+      }
+      .container3 {
+        background-image: radial-gradient(
+          circle 369px at -2.9% 12.9%,
+          rgba(247, 234, 163, 1) 0%,
+          rgba(236, 180, 238, 0.56) 46.4%,
+          rgba(163, 203, 247, 1) 100.7%
+        );
+        height: 650px;
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        gap: 50px;
+      }
+      .container5 a {
+        color: #13274f;
+        font-size: 30px;
+        display: flex;
+        padding: 20px;
+      }
+      .heading {
+        font-size: 40px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .img2 img {
+        float: right;
+        height: 390px;
+        width: 400px;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      .container6 {
+        display: flex;
+        justify-content: space-between;
+        gap: 410px;
+      }
+      .para {
+        font-family: "Times New Roman", Times, serif;
+        color: #13274f;
+        font-weight: 400;
+      }
+      .container5 a:hover {
+        color: #fd5c63;
+      }
+      .container-prjt {
+        border: 2px solid #13274f;
+        border-radius: 5px;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .last-container {
+        background: rgb(204, 10, 173);
+        background: linear-gradient(
+          90deg,
+          rgba(204, 10, 173, 1) 0%,
+          rgba(189, 255, 0, 0.9831582291119573) 100%
+        );
+        height: 40px;
+      }
+      .footer {
+        background: rgb(51, 4, 60);
+        background: radial-gradient(
+          circle,
+          rgba(51, 4, 60, 1) 1%,
+          rgba(26, 7, 70, 1) 100%
+        );
+        height: px;
+      }
+      .style {
+        border: 2px solid #13274f;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .child1 button {
+        border-radius: 3px;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .child1 button:hover {
+        color: #ffffff;
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+      }
+      .child2 button {
+        border-radius: 3px;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .child2 button:hover {
+        color: rgb(254, 254, 254);
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+      }
+      .child3 button {
+        border-radius: 3px;
+        background-color: #8ec5fc;
+        background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+      }
+      .child3 button:hover {
+        color: #ffffff;
+        background-color: #21d4fd;
+        background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container2">
+      <div class="img1">
+        <a href="#"><img src="image/logo-1-70x70.png" alt="" /></a>
+      </div>
+      <div class="container1">
+        <ul>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <button class="btn1">
+          <a href="#">Hire me</a>
+        </button>
+      </div>
+    </nav>
+    <div class="container3">
+      <div class="container5">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="container6">
+        <div class="container4">
+          <h1 class="heading">I'am a Web Developer</h1>
+          <h1 class="heading">Alok Ku. Swain</h1>
+          <br />
+          <p class="para">
+            Hi, My Name is ALOK KUMAR SWAIN and I am a web developer ,i have
+            developed many types of front end projects from well known Dj
+            applications to E-commerce booking platforms.
+          </p>
+          <p class="para">
+            I am passionate about cutting edge,pixel perfect, beautiful
+            interfaces and implemented UX.
+          </p>
+          <br />
+          <div class="container-prjt">
+            <div>
+              <button class="btn2"><a href="#"> Learn More</a></button>
+            </div>
+            <div>
+              <button class="btn2">
+                <a href="https://swiggyform-mobile-aap.netlify.app/">
+                  Projects</a
+                >
+              </button>
+            </div>
+          </div>
+          <br /><br /><br /><br /><br /><br />
+          <div class="style">
+            <div class="child1">
+              <button>More projects</button>
+            </div>
+            <div class="child2">
+              <button>Show resume</button>
+            </div>
+            <div class="child3">
+              <button>Show more</button>
+            </div>
+          </div>
+        </div>
+        <div class="img2">
+          <img
+            src="image/happy-man-points-something-character-advertisement-guy-shows-direction-with-hand-cartoon-style_165429-917.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="last-container"></div>
+  </body>
+</html>
